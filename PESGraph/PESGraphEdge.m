@@ -36,7 +36,7 @@
 }
 
 #pragma mark -
-#pragma mark Initilizers
+#pragma mark Initializers
 
 - (id)init
 {

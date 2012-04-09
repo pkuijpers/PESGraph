@@ -18,7 +18,7 @@
 
 + (PESGraphEdge *)edgeWithName:(NSString *)aName andWeight:(NSNumber *)aNumber {
     
-    PESGraphEdge *anEdge = [[[PESGraphEdge alloc] init] autorelease];
+    PESGraphEdge *anEdge = [[PESGraphEdge alloc] init];
 
     anEdge.weight = aNumber;
     anEdge.name = aName;
@@ -28,7 +28,7 @@
 
 + (PESGraphEdge *)edgeWithName:(NSString *)aName {
 
-    PESGraphEdge *anEdge = [[[PESGraphEdge alloc] init] autorelease];
+    PESGraphEdge *anEdge = [[PESGraphEdge alloc] init];
     
     anEdge.name = aName;
     

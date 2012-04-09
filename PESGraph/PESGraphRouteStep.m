@@ -38,8 +38,8 @@
         
         isBeginningStep = NO;
         isEndingStep = (anEdge == nil);
-        node = [aNode retain];
-        edge = [anEdge retain];
+        node = aNode;
+        edge = anEdge;
     }
     
     return self;
@@ -53,8 +53,8 @@
         
         isBeginningStep = isBeginning;
         isEndingStep = (anEdge == nil);
-        node = [aNode retain];
-        edge = [anEdge retain];
+        node = aNode;
+        edge = anEdge;
     }
     
     return self;
@@ -65,16 +65,6 @@
 - (bool)isEndingStep
 {
     return (self.edge == nil);
-}
-
-#pragma mark -
-#pragma mark Memory Management
-
-- (void)dealloc
-{    
-    [node release];
-    [edge release];
-    [super dealloc];
 }
 
 @end

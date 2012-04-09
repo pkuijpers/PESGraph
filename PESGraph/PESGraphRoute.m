@@ -29,9 +29,9 @@
 
 - (void)addStepFromNode:(PESGraphNode *)aNode withEdge:(PESGraphEdge *)anEdge
 {
-    PESGraphRouteStep *aStep = [[[PESGraphRouteStep alloc] initWithNode:aNode
+    PESGraphRouteStep *aStep = [[PESGraphRouteStep alloc] initWithNode:aNode
                                                                 andEdge:anEdge
-                                                            asBeginning:([steps count] == 0)] autorelease];
+                                                            asBeginning:([steps count] == 0)];
     
     [steps addObject:aStep];
 }
@@ -86,15 +86,6 @@
     }
  
     return totalLength;
-}
-
-#pragma mark -
-#pragma mark Memory Management
-
-- (void)dealloc
-{
-    [steps release];
-    [super dealloc];
 }
 
 @end

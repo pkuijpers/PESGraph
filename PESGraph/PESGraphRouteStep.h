@@ -39,8 +39,8 @@
     bool isBeginningStep;
 }
 
-@property (nonatomic, retain, readonly) PESGraphNode *node;
-@property (nonatomic, retain, readonly) PESGraphEdge *edge;
+@property (nonatomic, readonly) PESGraphNode *node;
+@property (nonatomic, readonly) PESGraphEdge *edge;
 @property (nonatomic, readonly) bool isBeginningStep;
 
 /**

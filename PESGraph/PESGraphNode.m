@@ -17,7 +17,7 @@
 
 + (PESGraphNode *)nodeWithIdentifier:(NSString *)anIdentifier {
 
-    PESGraphNode *aNode = [[[PESGraphNode alloc] init] autorelease];
+    PESGraphNode *aNode = [[PESGraphNode alloc] init];
     
     aNode.identifier = anIdentifier;
     
